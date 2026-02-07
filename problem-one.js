@@ -20,7 +20,9 @@ function newPrice(currentPrice, discount) {
 // Challenge part 
 function newPrice(currentPrice, discount) {
   if (typeof discount !== "number" || typeof currentPrice !== "number" || discount < 0 || discount > 100) {
+
     return "Invalid";
+
   }
 
     const discountAmount = currentPrice * discount / 100;
